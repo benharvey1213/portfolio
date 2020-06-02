@@ -12,6 +12,14 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
+.break {
+    height: 100px;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
 .container {
     max-width: 800px;
 }
@@ -175,6 +183,18 @@ code {
     padding-right: 10px;
 }
 
+.text-link {
+    color: rgb(245, 245, 245);
+}
+
+.text-link:hover {
+    color: white
+}
+
+#email {
+    margin-top: 20px;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -200,9 +220,15 @@ code {
     margin-bottom: 0;
 }
 
-.card-column {
+
+/* .card-column {
     margin-bottom: 0px;
-}
+} */
+
+
+/* .column {
+    margin-bottom: initial;
+} */
 
 .card {
     padding: 15px;
@@ -222,3 +248,15 @@ code {
 .column-card {
     height: 100%;
 }
+
+.col-img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* @media (min-width: 40rem) {
+    .column {
+        margin-bottom: 0;
+    }
+} */

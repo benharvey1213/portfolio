@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Harvey</title>
 
+    <link rel="icon" type="image/png" href="./icon.png">
+
 
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <!-- <link rel="stylesheet" href="./milligram.css"> -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -18,163 +22,205 @@
 <body>
     <div class="container">
 
-        <h1 class="small-space"><span class="emoji">💬</span> Hey! I'm <b>Ben Harvey</b></h1>
-        <h4>I'm a Software Developer</h4>
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="small-space"><span class="emoji">💬</span> Hey! I'm <b>Ben Harvey</b></h1>
+            <h4>I'm a Software Developer</h4>
+        </div>
 
+        <div class="break"></div>
 
-        <br>
-        <h2 class="small-space">📘 Don't feel like any more reading?</h2>
-        <h4>I'll get to the point - here's my
-            <a href="" target="_blank">resume</a>,
-            <a href="mailto:ben.harvey1213@gmail.com">email</a>,
-            <a href="https://www.linkedin.com/in/benjamin-harvey-65762b196/" target="_blank">LinkedIn</a>, and
-            <a href="https://github.com/benharvey1213" target="_blank">GitHub</a>
-        </h4>
-        <br>
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="small-space">📘 Don't feel like any more reading?</h2>
+            <h4>I'll get to the point - here's my
+                <a href="./Resume.pdf" target="_blank">Resume</a>,
+                <a href="mailto:ben.harvey1213@gmail.com">Email</a>,
+                <a href="https://www.linkedin.com/in/benjamin-harvey-65762b196/" target="_blank">LinkedIn</a>, and
+                <a href="https://github.com/benharvey1213" target="_blank">GitHub</a>
+            </h4>
+        </div>
 
-        <!-- <h2 class="small-space">✏️ I'm going to school at <b>NDSU</b> in Fargo, ND</h2>
-        <h4 class="medium-space">I'm a senior <b>Computer Science</b> student</h4>
+        <div class="break"></div>
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="small-space">🔖
+                <a id="demo-skip" href="#demo">Demo</a>, <a id="skills-skip" href="#skills">Skills</a>, <a id="projects-skip" href="#projects">Projects</a>, <a id="education-skip" href="#education">Education</a>, <a id="work-skip" href="#work">Work</a>,
+                <a id="other-skip" href="#other">Other</a>
+            </h2>
+        </div>
 
-        <pre>
-            <code><span class="code-blue">function</span> <span class="code-yellow">getPassions</span>() {
-    <span class="code-purple">return</span> <span class="code-orange">'I love programming!'</span>;
-}</code>
-        </pre> -->
+        <div class="break"></div>
 
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 id="demo-skip-section" class="small-space">💻 I love building clean, <b>beautiful</b> apps</h2>
+            <h4>Here's a quick messaging demo I made - try it out!</h4>
 
-        <h2 class="small-space">💻 I love building clean, <b>beautiful</b> apps</h2>
-        <h4>Here's a quick messaging demo I made - try it out!</h4>
-        <br>
+            <div id="messaging" class="soft-shadow">
+                <div id="messages">
+                    <div class="messages-left">
+                        <div class="msg msg-left">Hey! Thanks for visiting my site!</div>
+                    </div>
+                </div>
+            </div>
 
-        <div id="messaging" class="soft-shadow">
-            <div id="messages">
-                <div class="messages-left">
-                    <div class="msg msg-left">Hey! Thanks for visiting my site!</div>
+            <div id="messagingInput" class="row">
+                <input id="messageInput" class="soft-shadow" spellcheck="false" autocomplete="off" type="text" placeholder="Write your message here...">
+                <button id="sendInput" class="soft-shadow">Send</button>
+            </div>
+        </div>
+
+        <div class="break"></div>
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 id="skills-skip-section" class="small-space">⌨️ I've got a few <b>skills</b></h2>
+            <h4>And I'm always eager to pick up more</h4>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <div id="skills-table" class="row">
+                <div class="column card-column">
+                    <div class="card column-card soft-shadow">
+                        <h6 class="smedium-space skill-heading"><b>Languages</b></h6>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </div>
+
+                </div>
+                <div class="column card-column">
+                    <div class="card column-card soft-shadow">
+                        <h6 class="smedium-space skill-heading"><b>Frameworks/Toolkits</b></h6>
+                        <li>Angular</li>
+                        <li>Flutter</li>
+                        <li>Electron</li>
+                        <li>Django</li>
+                        <li>Bootstrap</li>
+                        <li>Node.js</li>
+                    </div>
+
+                </div>
+                <div class="column card-column">
+                    <div class="card column-card soft-shadow">
+                        <h6 class="smedium-space skill-heading"><b>Other</b></h6>
+                        <li>Git</li>
+                        <li>Trello</li>
+                        <li>Microsoft Office</li>
+                        <li>Music Production</li>
+                        <li>Video Production</li>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <div id="messagingInput" class="row">
-            <input id="messageInput" class="soft-shadow" spellcheck="false" autocomplete="off" type="text" placeholder="Write your message here...">
-            <button id="sendInput" class="soft-shadow">Send</button>
+        <div class="break"></div>
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 id="projects-skip-section" class="small-space">🖱️ I work on a lot of <b>personal projects</b></h2>
+            <h4>I always have an idea that motivates me to learn new things</h4>
         </div>
 
-
-        <br>
-        <h2 class="small-space">⌨️ I've got a few <b>skills</b></h2>
-        <h4>And I'm always eager to pick up more</h4>
-
-
-        <div id="skills-table" class="row">
+        <div data-aos="fade-right" data-aos-duration="1000" class="row soft-shadow card">
             <div class="column card-column">
-                <div class="card column-card soft-shadow">
-                    <h6 class="smedium-space skill-heading"><b>Languages</b></h6>
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                </div>
-
+                <h4>I made my foray into <b>Node.js</b> and the <b>Socket.IO</b> library by developing an <a href="https://github.com/benharvey1213/cards" target="_blank"><i>Apples to Apples</i> clone</a></h4>
+                <hr>
+                <p>I love multiplayer party games akin to the <i>Jackbox Party Packs</i>, so I wanted to make one of my own. The twist to this project was that each of the cards was generated semi-randomly, in order to make sure each game was a completely
+                    new experience.</p>
             </div>
             <div class="column card-column">
-                <div class="card column-card soft-shadow">
-                    <h6 class="smedium-space skill-heading"><b>Frameworks/Toolkits</b></h6>
-                    <li>Angular</li>
-                    <li>Flutter</li>
-                    <li>Electron</li>
-                    <li>Django</li>
-                    <li>Bootstrap</li>
-                </div>
-
-            </div>
-            <div class="column card-column">
-                <div class="card column-card soft-shadow">
-                    <h6 class="smedium-space skill-heading"><b>Other</b></h6>
-                    <li>Git</li>
-                    <li>Trello</li>
-                    <li>Microsoft Office</li>
-                    <li>Music Production</li>
-                    <li>Video Production</li>
-                </div>
-
+                <img class="soft-shadow rounded" src="./cardstv.png" alt="">
             </div>
         </div>
 
-        <br>
-        <h2 class="small-space">🖱️ I work on a lot of <b>personal projects</b></h2>
-        <h4>I always have an idea that motivates me to learn new things</h4>
+        <div data-aos="fade-right" data-aos-duration="1000" class="row soft-shadow card">
+            <div class="column card-column">
+                <h4>I expanded upon my knowledge of <b>Node.js</b> and <b>Socket.IO</b> from the last project, and programmed <a href="https://github.com/benharvey1213/comment-bomb" target="_blank">Comment Bomb</a>.</h4>
+                <hr>
+                <p>This game uses Reddit's API to pull a trending picture from a curated list of subreddits. Each user is prompted to create a funny caption for the picture, then everyone votes for the best caption.</p>
+            </div>
+            <div class="column card-column">
+                <img class="rounded soft-shadow" src="./commentbomb.png" alt="">
+            </div>
+        </div>
 
-        <div class="row soft-shadow card">
+        <div data-aos="fade-right" data-aos-duration="1000" class="row soft-shadow card">
+            <div class="column card-column">
+                <h4>I taught myself <b>Electron</b> by building <a href="https://github.com/benharvey1213/music-video-app" target="_blank">this music video creation app</a> in order to quickly generate shareable content for social media</h4>
+                <hr>
+                <p>After developing a <b>Python</b> backend with the <i>MoviePy</i> library, I was able to utilize the power of <b>JavaScript</b> to build a user-friendly frontend. The user is able to choose an audio file, a video file, and an overlay image
+                    to customize their video.</p>
+            </div>
+            <div class="column card-column">
+                <img class="col-img rounded soft-shadow" src="./MusicVideoApp.png" alt="">
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000" class="row soft-shadow card">
             <div class="column card-column">
                 <h4>I taught myself more about <b>Python</b> and <b>Linux</b> by building <a href="https://github.com/benharvey1213/holidaytwitterbot" target="_blank">this Twitter bot</a></h4>
                 <hr>
-                <p>The bot runs on a <b>Raspberry Pi</b>, and pulls its data from a large CSV file I generated by scraping the web with <b>Python</b></p>
+                <p>The bot runs on a <b>Raspberry Pi</b>, and pulls its data from a large CSV file I generated by scraping the web with <b>Python</b>.</p>
             </div>
             <div class="column card-column">
-                <p id="twitter-feed"><a class="twitter-timeline" data-height="400" href="https://twitter.com/notaholidaybot?ref_src=twsrc%5Etfw">Tweets by notaholidaybot</a>
+                <p class="soft-shadow" id="twitter-feed"><a class="twitter-timeline" data-height="350" href="https://twitter.com/notaholidaybot?ref_src=twsrc%5Etfw">Tweets by notaholidaybot</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </p>
             </div>
         </div>
 
-        <div class="row soft-shadow card">
+        <div data-aos="fade-right" data-aos-duration="1000" class="row soft-shadow card">
             <div class="column card-column">
-                <h4>I taught myself <b>Electron</b> by building <a href="https://github.com/benharvey1213/music-video-app" target="_blank">this music video creation app</a></h4>
+                <h4>I also made this <a href="https://github.com/benharvey1213/portfolio" target="_blank">portfolio website</a> you're on now! I built it with the web standards - <b>HTML</b>, <b>JavaScript</b>, and <b>CSS</b></h4>
                 <hr>
-                <p>After developing a <b>Python</b> backend, I was able to utilize the power of <b>JavaScript</b> to build a user-friendly frontend</p>
-            </div>
-            <div class="column card-column">
-                <img src="./MusicVideoApp.png" alt="">
-            </div>
-        </div>
-
-        <div class="row soft-shadow card">
-            <div class="column card-column">
-                <h4>My magnum opus of web design is this portfolio website you're on now! I built it with the web standards - <b>HTML</b>, <b>JavaScript</b>, and <b>CSS</b></h4>
-                <hr>
-                <p>I also used the <b>Milligram</b> CSS framework to make things look a bit prettier</p>
+                <p>I used the <b>Milligram</b> CSS framework to make things look a bit prettier</p>
             </div>
         </div>
 
 
-        <br>
-        <h2 class="small-space">🎓 I have some <b>education</b> under my belt</h2>
-        <h4>Guess I can't create the next Facebook since I didn't drop out...</h4>
+        <div class="break"></div>
 
-        <div class="card soft-shadow">
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 id="education-skip-section" class="small-space">🎓 I have some <b>education</b> under my belt</h2>
+            <h4>Guess I can't create the next Facebook since I didn't drop out...</h4>
+        </div>
+
+
+        <div data-aos="fade-right" data-aos-duration="1000" class="card soft-shadow">
             <h5 class="small-space">🤘 <b>North Dakota State University</b> (2018 - Now)</h5>
             <hr class="hr-small">
-            <p>I'm attending for my Bachelor's Degree in Computer Science, and will be graduating in the Spring of 2021.</p>
+            <p>I'm attending for my Bachelor's Degree in Computer Science, and will be graduating in the Spring of 2021. My cumulative GPA is 3.729</p>
             <h6 class="smedium-space"><b><u>Relevant Coursework:</u></b></h6>
-            <li><b>Advanced Software Development</b> - poop</li>
-            <li><b>Database Systems</b> - poop</li>
-            <li><b>Modern Software Development</b> - poop</li>
-            <li><b>Data Structures and Algorithms</b> - poop</li>
-            <li><b>Intro to Computer Science</b> - poop</li>
+            <li><b>Intro to Computer Science</b> - learned the basics of Java</li>
+            <li><b>Data Structures and Algorithms</b> - expanded upon Intro to Computer Science</li>
+            <li><b>Modern Software Development</b> - learned development with ASP.NET</li>
+            <li><b>Database Systems</b> - learned the basics of relational databases</li>
+            <li><b>Advanced Software Development</b> - learned Angular, Bootstrap, and Django</li>
         </div>
 
-        <div class="card soft-shadow">
+        <div data-aos="fade-right" data-aos-duration="1000" class="card soft-shadow">
             <h5 class="small-space">🏫 <b>Hazen High School</b> (2014 - 2018)</h5>
             <hr class="hr-small">
             <p class="p-desc">I was involved in activities like Science Olympiad, National Honor Society, Robotics, and Band. I had experimented with programming since 5th grade, but I never really got the opportunity to apply it in High School.</p>
         </div>
 
-        <br>
-        <h2 class="small-space">👔 I'm not new to <b>work</b></h2>
-        <!-- <h4>"So, if you could do that, that would be great..." - <i>Bill Lumbergh</i></h4> -->
-        <h4>"If my manager insults me again, I will be assaulting him" - <i>Kanye West</i></h4>
+        <div class="break"></div>
 
-        <div class="card soft-shadow">
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 id="work-skip-section" class="small-space">👔 I'm not new to <b>work</b></h2>
+            <h4>"So, if you could do that, that would be great..." - <i>Bill Lumbergh</i></h4>
+        </div>
+
+
+        <div data-aos="fade-right" data-aos-duration="1000" class="card soft-shadow">
             <h5 class="small-space">💾 <b>Information Technology Assistant</b></h5>
             <h6 class="small-space">NDSU Dining - Fargo, ND <i>(Fall 2019 - Spring 2020)</i></h6>
             <hr class="hr-small">
-            <p class="p-desc">Throughout my time at Dining so far, I've been able to work on applications for internal use, mainly with <b>C#</b>. I had my first encounter with <b>SQL</b> here, and have become comfortable with it. I've also gotten to delve into some Android
-                and iOS app development in <b>Java</b> and <b>Swift</b>.</p>
+            <p class="p-desc">Throughout my time at Dining so far, I've been able to work on applications for internal use, mainly with <b>C#</b>. I had my first encounter with <b>SQL</b> here, and quickly become comfortable with it. I've also gotten to delve into some
+                Android and iOS app development in <b>Java</b> and <b>Swift</b>.</p>
         </div>
 
-        <div class="card soft-shadow">
+        <div data-aos="fade-right" data-aos-duration="1000" class="card soft-shadow">
             <h5 class="small-space">📁 <b>Seasonal Office Clerk Assistant</b></h5>
             <h6 class="small-space">West River Telecommunications - Hazen, ND <i>(Summer 2019 and 2020)</i></h6>
             <hr class="hr-small">
@@ -182,7 +228,7 @@
                 for me and my coworkers.</p>
         </div>
 
-        <div class="card soft-shadow">
+        <div data-aos="fade-right" data-aos-duration="1000" class="card soft-shadow">
             <h5 class="small-space">🎥 <b>Student Manager, Concessions/Cleaning</b></h5>
             <h6 class="small-space">Cinema Flix - Hazen, ND <i>(2016-2017, 2017-2018)</i></h6>
             <hr class="hr-small">
@@ -190,53 +236,28 @@
         </div>
 
 
-        <br>
-        <h2 class="small-space">🏅 I've got some other <b>achievements</b>, too</h2>
-        <h4>Not to toot my own horn or anything...</h4>
+        <div class="break"></div>
 
-        <div class="card soft-shadow">
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 id="other-skip-section" class="small-space">🏅 I've got some other <b>achievements</b>, too</h2>
+            <h4>Not to toot my own horn or anything...</h4>
+        </div>
+
+
+        <div data-aos="fade-right" data-aos-duration="1000" class="card soft-shadow">
             <h5 class="small-space">🦅 <b>Eagle Scout Rank</b> (2017)</h5>
             <hr class="hr-small">
-            <p class="p-desc">After being in Cub Scouts and Boy Scouts for 9 years, I earned this rank</p>
+            <p class="p-desc">After being in Cub Scouts and Boy Scouts for 9 years, I earned the highest rank offered in Scouting, showing commitment and dedication to my community</p>
         </div>
 
-        <div class="card soft-shadow">
-            <h5 class="small-space">🏆 <b>NDSU Dean's List</b></h5>
-            <hr class="hr-small">
-            <p class="p-desc">I have earned my spot on this list every semester since the Spring of 2019, earning a cumulative GPA of </p>
+        <div class="break"></div>
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="small-space">🧐 Like what you see?</h2>
+            <a href="mailto:ben.harvey1213@gmail.com">
+                <h3 id="email">Email me!</h3>
+            </a>
         </div>
-
-
-
-
-
-        <!-- <div class="row">
-            <div class="column column-20">
-                <h5><b>2018 - Now</b></h5>
-            </div>
-            <div class="column">
-                <h5 class="small-space"><i>North Dakota State University</i></h5>
-                <p>I'm majoring in Computer Science, and will be graduating in the Spring of 2021</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="column column-20">
-                <h5><b>2014 - 2018</b></h5>
-            </div>
-            <div class="column">
-                <h5 class="small-space"><i>Hazen High School</i></h5>
-                <p>I was involved in activities such as Science Olympiad, National Honor Society, Robotics, and Band</p>
-            </div>
-        </div> -->
-
-
-
-
-
     </div>
-
-
 
     <script src="./script.js"></script>
 </body>
