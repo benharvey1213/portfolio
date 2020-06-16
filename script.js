@@ -17,8 +17,6 @@ var currentForceString = 0;
 
 console.log('Check out my code 😊')
 
-AOS.init();
-
 demoSkip.addEventListener('click', function() {
     window.location = 'index.html#demo-skip-section';
     window.scrollBy(0, -30);
